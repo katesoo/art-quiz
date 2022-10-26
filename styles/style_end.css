@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'Gilroy-bold';
+  src: url("./assets/fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Gilroy-normal';
+  src: url("./assets/fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Gilroy-medium';
+  src: url("./assets/fonts/Gilroy-Medium.ttf");
+}
+
+.transparent {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .8;
+  z-index: 2;
+}
+
+.wrapper-for-form {
+  font-family: 'Gilroy-normal';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 5;
+}
+
+.wrapper-for-form .end-round {
+  width: 328px;
+  height: 436px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: auto;
+  color: #000;
+}
+
+.wrapper-for-form .form-img {
+  background-image: url("./assets/png/congrad.png");
+  width: 150px;
+  height: 140px;
+  margin: auto;
+  margin-top: 68px;
+}
+
+.wrapper-for-form .form-text {
+  font-family: 'Gilroy-normal';
+  font-size: 22px;
+  line-height: 28px;
+  margin: 31px 65px;
+}
+
+.wrapper-for-form .done-all {
+  font-family: 'Gilroy-bold';
+  font-size: 48px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.wrapper-for-form .form-buttons {
+  margin-top: 38px;
+  text-align: center;
+}
+
+.wrapper-for-form .form-button {
+  width: 150px;
+  height: 48px;
+  border-radius: 56px;
+  border: solid 1px #000;
+  font-family: 'Gilroy-normal';
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.wrapper-for-form .button2 {
+  border: solid 1px #FFBCA2;
+  background-color: #FFBCA2;
+}
+
+.wrapper-for-form .rightanswer {
+  width: 328px;
+  height: 436px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: auto;
+  color: #000;
+}
+
+.wrapper-for-form .answer-img {
+  background-image: url("./assets/image-data/img/10.jpg");
+  width: 275px;
+  height: 260px;
+  margin: auto;
+  margin-top: 30px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.wrapper-for-form .right-answer-img {
+  background-image: url("./assets/svg/rightAnswer.svg");
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  position: relative;
+  top: 190px;
+  left: 20px;
+}
+
+.wrapper-for-form .wrong-answer-img {
+  background-image: url("./assets/svg/wrongAnswer.svg");
+  background-color: tr;
+}
+
+.wrapper-for-form .name-picture {
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wrapper-for-form .author-and-year {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.wrapper-for-form .next {
+  display: block;
+  width: 250px;
+  height: 47px;
+  border-radius: 56px;
+  border: 1px solid #FFBCA2;
+  background-color: #FFBCA2;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (min-height: 700px) {
+  .wrapper-for-form .end-round {
+    width: 552px;
+    height: 608px;
+  }
+  .wrapper-for-form .form-img {
+    width: 166px;
+    height: 155px;
+    background-size: 166px 155px;
+    margin-top: 58px;
+  }
+  .wrapper-for-form .form-text {
+    font-size: 42px;
+    line-height: 51px;
+    margin: 35px 98px;
+    font-weight: 600;
+  }
+  .wrapper-for-form .done-all {
+    font-family: 'Gilroy-bold';
+    font-size: 82px;
+    line-height: 102px;
+    text-align: center;
+  }
+  .wrapper-for-form .form-buttons {
+    margin-top: 60px;
+    text-align: center;
+  }
+  .wrapper-for-form .form-button {
+    width: 210px;
+    height: 62px;
+    border-radius: 56px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .wrapper-for-form .rightanswer {
+    width: 522px;
+    height: 689px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    color: #000;
+  }
+  .wrapper-for-form .answer-img {
+    width: 462px;
+    height: 416px;
+  }
+  .wrapper-for-form .right-answer-img {
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    top: 325px;
+    left: 30px;
+  }
+  .wrapper-for-form .name-picture {
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 40px;
+  }
+  .wrapper-for-form .author-and-year {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .wrapper-for-form .next {
+    width: 400px;
+    height: 62px;
+  }
+}
+/*# sourceMappingURL=style_end.css.map */

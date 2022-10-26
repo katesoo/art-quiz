@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Gilroy-bold';
+    src: url('./assets/fonts/Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-normal';
+    src: url('./assets/fonts/Gilroy-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-medium';
+    src: url('./assets/fonts/Gilroy-Medium.ttf');
+}
+
+body{
+    background: #000;
+}
+#wrapper_categories {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gilroy-normal';
+    color: #fff;
+    display: none;
+}
+.header_categ {
+    padding: 23px 0 28px 29px;
+}
+.header_categ_title {
+    font-family: 'Gilroy-bold';
+    font-size: 42px;
+    line-height: 60px;
+    color: #FFBCA2;
+    text-transform: capitalize;
+}
+.quiz{
+    color: #fff;
+}
+
+.ellipse_cat {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    border: solid #fff 1px;
+    border-radius: 50%;
+    left: 47px;
+}
+.ellipse1_cat {
+    left: 16px;
+}
+.header_cat_text {
+}
+.setting_img_cat {
+    background-image: url('./assets/mainscreen/carbon_settings.png');
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 22px;
+    left: calc(100% - 56px);
+}
+.main_cat {
+}
+.main_cat_title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    margin-left: 16px;
+    margin-bottom: 30px;
+}
+.main_cat_artist {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.main_cat_artist_item {
+    width: 85%;
+    height: 30px;
+    border: solid 1px #fff;
+    border-radius: 30px;
+    margin: 4px 0 4px 16px;
+    text-align: center;
+    color: #000;
+    background-color: rgb(252, 239, 239);
+    z-index: 1;
+    line-height: 30px;
+}
+.main_cat_artist_item:hover{
+    background-color: #fff;
+}
+.main_cat_artist_item:active{
+    border: solid 1px #FFBCA2;
+    background-color: #FFBCA2;
+}
+.main_cat_artist_item:last-child{
+    margin-bottom: 80px;
+}
+.nav_cat {
+    min-height: 75px;
+    width: 100%;
+    top: calc(100% - 75px);
+    border: solid 1px #fff;
+    border-radius: 20px 20px 0 0;
+    position: fixed;
+    background-color: #000;
+    z-index: 4;
+}
+.nav_cat_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_cat_item {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Gilroy-bold';
+}
+.nav_cat_img{
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+}
+
+@media (min-width: 440px) {
+    .main_cat_artist {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main_cat_artist_item{
+        height: 40px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+}
+
+
+@media (min-width:512px) {
+    .header_categ {
+        padding: 44px 0 72px 75px;
+    }
+    .ellipse_cat{
+        left: 62px;
+    }
+    .ellipse1_cat{
+        left: 93px;
+    }
+    .settings-img{
+        top: 57px;
+        left: calc(100% - 80px);
+    }
+    .main_cat_title{
+        font-size: 36px;
+        line-height: 28px;
+        margin-left: 62px;
+        margin-bottom: 71px;
+    }
+    .nav_cat {
+        top: 52px;
+        width: 200px;
+        left: calc(100% - 283px);
+        position: absolute;
+        border: none
+    }
+    .nav_cat_img{
+        display: none;
+    }
+    .main_cat_artist_item{
+        height: 45px;
+    }
+    .main_cat_artist_item:last-child{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .header_categ {
+        padding: 30px 0 95px 83px;
+    }
+    .ellipse_cat{
+        left: 70px;
+    }
+    .ellipse1_cat{
+        left: 101px;
+    }
+    .settings-img{
+        top: 44px;
+        left: calc(100% - 105px);
+    }
+    .main_cat_title{
+        font-size: 36px;
+        line-height: 28px;
+        margin-left: 62px;
+        margin-bottom: 51px;
+    }
+    .nav_cat {
+        top: 52px;
+        width: 200px;
+        
+        left: 40%;
+        position: absolute;
+        border: none
+    }
+    .nav_cat_item{
+        font-family: 'Gilroy-normal';
+        font-size: 22px;
+        line-height: 18px;
+        height: 18px;
+        margin-top: 0;
+        margin-left: 70px;
+    }
+    .nav_cat_item:last-child{
+        display: none;
+    }
+    .nav_cat_img{
+        display: none;
+    }
+    .main_cat_artist_item:last-child{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:1024px) {
+    .nav_cat {
+        left: 30%; 
+    }
+    .nav_cat_item{
+        margin-left: 89px;
+    }
+    .main_cat_artist_item{
+        width: 70%;
+        height: 55px;
+        margin: 8px 0px 8px 70px;
+    }
+}
+@media (min-width:1440px) {
+    .nav_cat {
+        left: 356px; 
+    }
+}

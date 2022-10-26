@@ -1,0 +1,40 @@
+import "./assets/mainscreen/j-retrato-de-cardenal-rafael_1.jpg";
+import "./assets/mainscreen/carbon_settings.png";
+import "./assets/svg/стрелка.svg";
+import "./assets/svg/-.svg";
+import "./assets/svg/+.svg";
+import "./assets/fonts/Gilroy-Bold.ttf";
+import "./assets/fonts/Gilroy-Regular.ttf";
+import "./assets/fonts/Gilroy-Medium.ttf";
+import "./assets/mainscreen/rs_school_js1.png";
+import "./assets/png/vol-mute.png";
+import "./assets/png/vol-down.png";
+import "./assets/svg/home.svg";
+import "./assets/svg/category.svg";
+import "./assets/svg/score.svg";
+import "./assets/svg/close.svg";
+import "./assets/music/right.mp3";
+import "./assets/music/wrong.mp3";
+import "./assets/music/end.mp3";
+
+import "./styles/normalize.css";
+import "./styles/ArtistCategories.css";
+import "./styles/PictureCategories.css";
+import "./styles/MainPageAndSettings.css";
+import "./styles/Results.css";
+import "./styles/Questions.css";
+import "./styles/Pictures.css";
+import "./styles/RightAnswerAndEndRound.css";
+
+import "./js/settings";
+import "./js/changeScreen";
+import "./js/openRoundForArtist";
+import "./js/openRoundForPicture";
+import "./js/class";
+import "./js/openResults";
+import "./js/Score";
+import './js/models';
+// import './js/timer';
+
+import "./assets/image-data/imagesRu.json";
+import "./assets/image-data/imagesEng.json";

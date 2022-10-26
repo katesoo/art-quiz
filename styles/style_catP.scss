@@ -1,0 +1,107 @@
+#wrapper_categories{
+    display: block;
+}
+.main_catP {
+    .main_cat_title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.5px;
+        margin-left: 16px;
+        margin-bottom: 30px;
+    }
+    .main_cat_artist {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .main_cat_artist_item {
+        width: 85%;
+        background-image: url('../assets/image-data/img/107.jpg');
+        background-position:center;
+        background-size: cover;
+        height: 70px;
+        border: solid 1px #fff;
+        border-radius: 30px;
+        margin: 4px 0 4px 16px;
+        text-align: center;
+        color: #fff;
+        background-color: rgb(252, 239, 239);
+        z-index: 1;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .main_cat_artist_item:hover{
+        background-color: #fff;
+        filter: contrast(0.6);
+    }
+    .main_cat_artist_item:active{
+        border: solid 1px #FFBCA2;
+        background-color: #FFBCA2;
+    }
+    .main_cat_artist_item:last-child{
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 440px) {
+    .main_catP {
+        .main_cat_artist {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .main_cat_artist_item{
+            height: 60px;
+            line-height: 60px;
+        }
+    }
+
+}
+@media (min-width:512px) {
+
+    .main_catP{
+        .main_cat_title{
+            font-size: 36px;
+            line-height: 28px;
+            margin-left: 62px;
+            margin-bottom: 31px;
+        }
+        .main_cat_artist_item{
+            height: 70px;
+        }
+        .main_cat_artist_item:last-child{
+            margin-bottom: 20px;
+        }
+    }
+
+}
+@media (min-width:768px) {
+    .main_catP{
+        .main_cat_title{
+            font-size: 36px;
+            line-height: 28px;
+            margin-left: 62px;
+            margin-bottom: 51px;
+        }
+    
+        .main_cat_artist_item:last-child{
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+@media (min-width:1024px) {
+    .main_catP{
+        .main_cat_artist {
+            grid-template-columns: 1fr 1fr 1fr;
+    
+        }
+        .main_cat_artist_item{
+            width: 90%;
+            height: 95px;
+            margin: 8px 0px 8px 20px;
+        }
+    }
+
+}

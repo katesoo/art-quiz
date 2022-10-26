@@ -1,0 +1,231 @@
+body {
+  background: #000;
+}
+#wrapper_categories {
+  display: none;
+  background-color: #070707;
+  width: 100%;
+  height: 100%;
+  font-family: "Gilroy-normal";
+  color: #fff;
+  transition: all 0.3s;
+}
+
+
+.header_category {
+  padding: 23px 0 28px 29px;
+}
+.header_category_title {
+  font-family: "Gilroy-bold";
+  font-size: 42px;
+  line-height: 60px;
+  color: #ffbca2;
+  text-transform: capitalize;
+}
+.quiz {
+  color: #fff;
+}
+
+.ellipse_category {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  border: solid #fff 1px;
+  border-radius: 50%;
+  left: 47px;
+}
+.ellipse1_category {
+  left: 16px;
+}
+
+.setting_img_category {
+  background-image: url("../assets/mainscreen/carbon_settings.png");
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 22px;
+  left: calc(100% - 56px);
+}
+
+.main_category_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  margin-left: 16px;
+  margin-bottom: 30px;
+}
+.main_category_artist {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.main_category_artist_item {
+  position: relative;
+  width: 85%;
+  height: 30px;
+  border: solid 1px #fff;
+  border-radius: 30px;
+  margin: 4px 0 4px 16px;
+  text-align: center;
+  color: #000;
+  background-color: rgb(252, 239, 239);
+  z-index: 1;
+  line-height: 30px;
+}
+.main_category_artist_item:hover {
+  background-color: #fff;
+}
+.main_category_artist_item:active {
+  border: solid 1px #ffbca2;
+  background-color: #ffbca2;
+}
+.main_category_artist_item:last-child {
+  margin-bottom: 80px;
+}
+.played {
+  position: relative;
+  background-color: rgb(110, 110, 110);
+  color: #fff;
+}
+
+.nav_category {
+  min-height: 75px;
+  width: 100%;
+  top: calc(100% - 75px);
+  border: solid 1px #fff;
+  border-radius: 20px 20px 0 0;
+  position: fixed;
+  background-color: #000;
+  z-index: 4;
+}
+.nav_category_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_category_item {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Gilroy-bold";
+}
+.nav_category_img {
+  width: 28px;
+  height: 28px;
+  margin: 0 auto;
+}
+
+@media (min-width: 440px) {
+  .main_category_artist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main_category_artist_item {
+    height: 40px;
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 512px) {
+  .header_category {
+    padding: 44px 0 72px 75px;
+  }
+  .ellipse_category {
+    left: 62px;
+  }
+  .ellipse1_category {
+    left: 93px;
+  }
+  .settings-img {
+    top: 57px;
+    left: calc(100% - 80px);
+  }
+  .main_category_title {
+    font-size: 36px;
+    line-height: 28px;
+    margin-left: 62px;
+    margin-bottom: 71px;
+  }
+  .nav_category {
+    top: 52px;
+    width: 200px;
+    left: calc(100% - 283px);
+    position: absolute;
+    border: none;
+  }
+  .nav_category_img {
+    display: none;
+  }
+  .main_category_artist_item {
+    height: 45px;
+  }
+  .main_category_artist_item:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header_category {
+    padding: 30px 0 95px 83px;
+  }
+  .ellipse_category {
+    left: 70px;
+  }
+  .ellipse1_category {
+    left: 101px;
+  }
+  .settings-img {
+    top: 44px;
+    left: calc(100% - 105px);
+  }
+  .main_category_title {
+    font-size: 36px;
+    line-height: 28px;
+    margin-left: 62px;
+    margin-bottom: 51px;
+  }
+  .nav_category {
+    top: 52px;
+    width: 200px;
+
+    left: 40%;
+    position: absolute;
+    border: none;
+  }
+  .nav_category_item {
+    font-family: "Gilroy-normal";
+    font-size: 22px;
+    line-height: 18px;
+    height: 18px;
+    margin-top: 0;
+    margin-left: 70px;
+  }
+  .nav_category_img {
+    display: none;
+  }
+  .main_category_artist_item:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav_category {
+    left: 30%;
+  }
+  .nav_category_item {
+    margin-left: 89px;
+  }
+  .main_category_artist_item {
+    width: 70%;
+    height: 55px;
+    margin: 8px 0px 8px 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav_category {
+    left: 356px;
+  }
+}
